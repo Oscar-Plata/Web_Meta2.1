@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>META 2.1 Oscar Plata</title>
-        <style>
+        <style> 
             body{
                 background-color:rgb(51,51,51);
                 min-height: 100vh;
@@ -48,6 +48,11 @@
                 width: 15vw;
                 font-size: 2.5vw;
             }
+            .boton:hover{
+                padding: 8px;
+                font-size: 4vw;
+                width: 20vw;
+            }
 
             .textoDatos{
                 width: 40vw;
@@ -71,10 +76,10 @@
         <form action="/" method="POST">
             <div class="inputForm">
                 <center>
-                <label for="datos1">Datos para el server: </label><br>
-                <input name="datos1" class="textoDatos" value="" hint="Datos a enviar">
-                <input name="datos2" class="textoDatos" value="" hint="Datos a enviar"><br>
-                <input type="submit" value="Enviar" class="boton"><br>
+                <label for="datos1">Input de Datos: </label><br>
+                <input name="datos1" class="textoDatos" value="" placeholder="Datos a Enviar">
+                <!-- <input name="datos2" class="textoDatos" value="" hint="Datos a enviar"><br> -->
+                <br><input type="submit" value="Enviar" class="boton">
                 </center>
             </div>
         </form>
