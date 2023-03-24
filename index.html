@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>META 2.1 Oscar Plata</title>
+        <style>
+            body{
+                background-color:rgb(51,51,51);
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+
+            footer{
+                padding: 10px;
+                background-color: rgb(27,135,152);
+                margin-top: auto;
+            }
+
+            h1{
+                color: rgb(251,255,227);
+                text-align: center;
+            }
+
+            .headerDiv{
+                padding: 10px;
+                background-color:rgb(158,12,57);
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                font-family:'Courier New', Courier, monospace;
+                font-weight: bold;
+            }
+
+            .boton{
+                margin: 5px;
+                background-color: rgb(131,163,0);
+                color: rgb(251,255,227);
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+                height: 12vh;
+                width: 15vw;
+                font-size: 2.5vw;
+            }
+
+            .textoDatos{
+                width: 40vw;
+                height: 60px;
+            }
+
+            .inputForm{
+                border-radius: 10px;
+                background-color: rgba(251,255,227,0.8);
+                margin-top: 10px;
+                margin-left: 5px;
+                margin-right: 5px;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="headerDiv">
+            <h1>Enviando Datos al servidor</h1>
+        </div>
+        <form action="/" method="POST">
+            <div class="inputForm">
+                <center>
+                <label for="datos1">Datos para el server: </label><br>
+                <input name="datos1" class="textoDatos" value="" hint="Datos a enviar">
+                <input name="datos2" class="textoDatos" value="" hint="Datos a enviar"><br>
+                <input type="submit" value="Enviar" class="boton"><br>
+                </center>
+            </div>
+        </form>
+        <footer><center>Meta 2.1 ~ Oscar Joel Lopez Plata ~ Desarrollo de Aplicaciones Web</center> </footer>
+    </body>
+</html>
