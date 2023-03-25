@@ -1,7 +1,9 @@
 const http = require('http');
 const puerto = 3001;
 const archivos = require('fs');
+//se crea el servidor
 http.createServer((req,res)=> {
+    //Se obtiene el metodo
     var metodo=req.method;
     switch(metodo){
 
@@ -30,6 +32,7 @@ http.createServer((req,res)=> {
             break;
     }
 }).listen(puerto,(err)=>{
+    //abre el puerto e inicia el servidor
     if(err){
         console.log("Error: ",err);
         return;
